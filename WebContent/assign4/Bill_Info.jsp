@@ -20,11 +20,7 @@ Units Consumed:: <c:out value="${billDTO.unitsConsumed }"></c:out><br>
 Net Amount:: Rs.<c:out value="${billDTO.netAmount }"></c:out>
 </h2>
 
-
-
 </c:when>
-
-
 <c:otherwise>
 
 <font color="red">Error Occurred</font>
