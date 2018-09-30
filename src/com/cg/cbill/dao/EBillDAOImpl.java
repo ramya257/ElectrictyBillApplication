@@ -35,6 +35,7 @@ public class EBillDAOImpl implements IEBillDAO {
 			consumerDTO.setConsumerName(resultSet.getString(2));
 			consumerDTO.setConsumerAddress(resultSet.getString(3));
 			consumerList.add(consumerDTO);
+			system.out.println(consumerDTO);
 			
 		}
 		
@@ -72,7 +73,7 @@ public class EBillDAOImpl implements IEBillDAO {
 				}
 				
 			} catch (SQLException e) {
-				// TODO Auto-generated catch block
+				
 				e.printStackTrace();
 			}
 			
@@ -81,7 +82,6 @@ public class EBillDAOImpl implements IEBillDAO {
 
 	@Override
 	public BillDTO showBillInformation(int billNumber) {
-		// TODO Auto-generated method stub
 		return null;
 	}
 
@@ -102,7 +102,7 @@ public class EBillDAOImpl implements IEBillDAO {
 			}
 			
 		} catch (SQLException e) {
-			// TODO Auto-generated catch block
+			
 			e.printStackTrace();
 		}
 		
